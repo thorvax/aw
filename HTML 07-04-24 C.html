@@ -1,0 +1,58 @@
+<html>
+
+
+<head>
+    <title>Countdown Redirect</title>
+    <script type="text/javascript">
+        function startCountdown() {
+            var messageElement = document.getElementById("message");
+            var countdownElement = document.getElementById("countdown");
+            var seconds = 5;
+
+            messageElement.innerHTML = "ULL NEVER ESCAPE UR FATE! hahaha";
+            countdownElement.innerHTML = seconds;
+
+            var countdown = setInterval(function() {
+                seconds--;
+                countdownElement.innerHTML = seconds;
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Replace with your desired URL
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+
+ <body>
+
+    <h1>Do you like  to see <br>some photos of cats?</h1>
+     <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <h2>YES</h2></a></button> 
+     <button onclick="startCountdown()"><h2>NO</h2></button>
+    <p id="message"></p>
+    <p id="countdown"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+
+
+
+
+</html>
